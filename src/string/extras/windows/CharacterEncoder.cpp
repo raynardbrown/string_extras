@@ -10,13 +10,13 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-#include "CharacterEncoder.h"
-
 #include <cstring>
 #include <exception>
 #include <vector>
 
 #include <windows.h>
+
+#include "string/extras/CharacterEncoder.h"
 
 template <typename T>
 static int stringLengthValidator(typename std::vector<T>::size_type stringLength)
