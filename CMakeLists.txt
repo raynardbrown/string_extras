@@ -6,7 +6,7 @@ project(string_extras)
 set(Headers "")
 list(APPEND Headers ${CMAKE_CURRENT_SOURCE_DIR}/inc)
 
-set(Sources src/CharacterEncoder.cpp)
+set(Sources src/string/extras/CharacterEncoder.cpp)
 
 if (MSVC)
     add_compile_options(-Zi 
@@ -17,7 +17,7 @@ if (MSVC)
                         -DUNICODE
                         -D_UNICODE)
                         
-    set(Sources_Windows src/windows/CharacterEncoder.cpp)
+    set(Sources_Windows src/string/extras/windows/CharacterEncoder.cpp)
     
     list(APPEND Sources ${Sources_Windows})
 else()
