@@ -10,7 +10,7 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-#include "CharacterEncoder.h"
+#include "string/extras/CharacterEncoder.h"
 
 CharacterEncoder::CharacterEncoder()
 {
