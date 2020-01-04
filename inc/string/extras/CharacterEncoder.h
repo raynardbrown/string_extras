@@ -10,17 +10,19 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-#ifndef CHARACTERENCODER_H_
-#define CHARACTERENCODER_H_
+#ifndef STRING_EXTRAS_CHARACTERENCODER_H_
+#define STRING_EXTRAS_CHARACTERENCODER_H_
 
 #include <string>
 
 class CharacterEncoder
 {
   protected:
+
     CharacterEncoder();
 
   public:
+
     ~CharacterEncoder();
 
     /**
@@ -48,7 +50,5 @@ class CharacterEncoder
      * @throws std::exception if specified string cannot be processed.
      */
     static std::string utf16ToUtf8(const std::wstring& utf16String);
-
 };
-
-#endif /* INC_CHARACTERENCODER_H_ */
+#endif /* STRING_EXTRAS_CHARACTERENCODER_H_ */
